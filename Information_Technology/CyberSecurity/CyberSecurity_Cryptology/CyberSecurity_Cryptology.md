@@ -1821,11 +1821,15 @@ username and password every time.
 First, we need to see if you have an SSH key already installed. Type
 this into the terminal:
 
+```
 ls ~/.ssh/id_rsa.pub
+```
 
 This works as well (searches for any public key)
 
+```
 $ ls ~/.ssh/\*.pub
+```
 
 If a message appears in the console containing the text “No such file or
 directory”, then you do not yet have an SSH key, and you will need to

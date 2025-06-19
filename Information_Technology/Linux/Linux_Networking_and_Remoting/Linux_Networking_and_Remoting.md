@@ -3559,8 +3559,8 @@ sudo apt-get install freerdp2-x11
 
 **Use**
 
-xfreerdp /u:'aws\bobby.valenzuela' /p:'B@ckup123!'
-/v:vo-syd-dl7.probax.io:3389
+xfreerdp /u:'aws\bobby.valenzuela' /p:'{PASS}'
+/v:{SERVER}:3389
 
 - Add ‘/f’ for full screen
 
@@ -3572,13 +3572,13 @@ xfreerdp /u:'aws\bobby.valenzuela' /p:'B@ckup123!'
 
 Best combo I’ve found:
 
-xfreerdp /u:'aws\bobby.valenzuela' /p:'B@ckup123!'
-/v:vo-syd-dl7.probax.io:3389 +window-drag +dynamic-resolution +clipboard
+xfreerdp /u:'aws\bobby.valenzuela' /p:'{PASS}'
+/v:{SERVER}:3389 +window-drag +dynamic-resolution +clipboard
 /w:1920 /h:1080
 
 Sometimes theres more success separating the domain
 
-xfreerdp /u:'aws\bobby.valenzuela' /p:'Password123!'
+xfreerdp /u:'aws\bobby.valenzuela' /p:'{PASS}'
 /v:myremoteserver.io:3389 +window-drag +dynamic-resolution /w:1920
 /h:1080 &\> /dev/null &
 
@@ -3631,7 +3631,7 @@ Works on windows… if they have Kerberos or disabled NLA.
 
 **Connect with user/pass and enabled clipboard redirection**
 
-$ rdesktop -u 'aws\bobby.valenzuela' -p 'Password123!'
+$ rdesktop -u 'aws\bobby.valenzuela' -p '{PASS}'
 myremoteserver.io:3389 -r clipboard:"PRIMARYCLIPBOARD"
 
 ### Install Rdesktop

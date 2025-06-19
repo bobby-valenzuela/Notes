@@ -459,7 +459,7 @@ get '/v1/demo/articles/:article_id' =\> *sub* {
 
     *\# 'REQUEST_METHOD' =\> 'POST',*
 
-    *\# 'HTTP_HOST' =\> 'c4alpha.probax.io:3000',*
+    *\# 'HTTP_HOST' =\> 'myserver.io:3000',*
 
     *\# 'CONTENT_TYPE' =\> 'application/json',*
 
@@ -1380,8 +1380,7 @@ UNIQUE_ID:
 \# printing INC and using those paths
 
 \- using perl -V - Look at %ENV adding all those paths compiles but
-gives error I noted a few comments back when running exe (same err kev
-found)
+gives error I noted a few comments back when running exe ()
 
 \- using perl -e 'print join "\n", @INC;' (same as above)
 
@@ -1475,8 +1474,7 @@ so if you use -tiny it doesnt include the modules in the exe, but you
 have to include them in the folder in your own way. and if you miss one
 itll cause the exe to fail or get stuck
 
-c:\Perl2Exe\perl2exe.exe -platform=Win64-5.24.3
--i="c:\Perl2Exe\probax2e.ico" -o=exes\\ probax-spbadsmasher.pl
+c:\Perl2Exe\perl2exe.exe -platform=Win64-5.24.3 -i="c:\Perl2Exe\myicon.ico" -o=exes\\ myscript.pl
 
 ## Perl Modules
 

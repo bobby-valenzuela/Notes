@@ -187,11 +187,11 @@ git config --global user.name "Your Name"
 
 - **Clone remote repo to local directory**
 
-  - `git clone \<repo url\>`
+  - ```git clone \<repo url\>```
 
 - **Log: Log x number (5) of last commits**
 
-  - `git log –n 5 –oneline`
+  - ```git log –n 5 –oneline```
 
   - <img src="./media/image6.png" style="width:4.0556in;height:1.43883in"
     alt="Text Description automatically generated" />
